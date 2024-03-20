@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nomes {
+    line-height: 1.2;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+}
+  
+.nomes img {
+    max-width: 100%;
+  }
+
+.container_fundo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fundo2.svg);
+    background-size: 100%; /* Redimensiona a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat;
+}
+.fundo{
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 177px 130px 33px 95px;
+}
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.container_button {
+
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+       
+}
+
+.button_conf_presenca{
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #B17D28;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+.presenca_form {
+    width: 290px;
+}
+
+button:hover {
+    background-color: #545454;
+    transition: 0.3s;
+}
+
+.nome_completo{
+    padding-bottom: 10px;
+    color: #B17D28;
+}
+
+.txt_conf_presenca {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #B17D28;
+}
+
+.entrada_texto{
+
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    border-radius: 10px;
+    padding: 0 30px 0 10px;
+
+    /*position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: #B17D28;
+    font-size: 20px;*/
+}
+
+.opcao{
+    margin-bottom: 10px;
+}
+
+.label_opcao{
+    margin-bottom: 10px;
+    color: #B17D28;
+}
+/*@media screen and (max-width: 600px) {
+    /* Estilos para telas menores que 600px de largura 
+    p {
+        text-align: center;
+        position: fixed;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        color: #B17D28;
+        width: 325px;
+        height: 50px;
+    }   
+    .qr_code {
+        max-width: 30%;
+        height: auto;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/fundo_celular2.svg);
+        background-size: 100%; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .nomes{
+        text-align: center;
+        position: fixed;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+    }
+    button {
+        background-color: #B17D28;
+        color: white;
+        text-transform: uppercase;
+        transition: 0.3s;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        font-size: 10px;
+        cursor: pointer;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: auto;
+        display: inline-block;
+        margin: 20px auto;
+        position: absolute;
+    }
+}*/
