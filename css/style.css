@@ -105,7 +105,6 @@ button:hover {
 }
 
 .entrada_texto{
-
     font-family: Poppins-Medium;
     font-size: 20px;
     line-height: 1.5;
@@ -133,6 +132,10 @@ button:hover {
 .label_opcao{
     margin-bottom: 10px;
     color: #B17D28;
+}
+
+#meuInput{
+    display: none;
 }
 /*@media screen and (max-width: 600px) {
     /* Estilos para telas menores que 600px de largura 

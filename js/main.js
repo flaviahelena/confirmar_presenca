@@ -19,3 +19,12 @@ function abreOpcaoConfirmacao(){
         });
     });*/
 }
+
+function abreInput() {
+    document.getElementById('meuInput').style.display = 'block';
+}
+
+function fecha() {
+    document.getElementById('meuInput').style.display = 'block';
+
+}

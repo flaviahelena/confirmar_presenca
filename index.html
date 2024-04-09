@@ -12,7 +12,8 @@
     <div class="limiter">
         <div class="container_fundo">
             <div class="fundo">
-                <form class="presenca_form" action="https://script.google.com/macros/s/AKfycbyFZLrf_km4WrwM6Nac09Gf5Zsfo2A0IozXFauKSz2NzL4bQc0gCyH8MjfuO0fZ6leXDw/exec" method="post">
+                <!--<form class="presenca_form" action="https://script.google.com/macros/s/AKfycbyFZLrf_km4WrwM6Nac09Gf5Zsfo2A0IozXFauKSz2NzL4bQc0gCyH8MjfuO0fZ6leXDw/exec" method="post">-->
+                    <form class="presenca_form">
                     <div class="nomes">
                         <!--<img src="./images/nomes2.png">-->
                         <span class="nome_titulo">FERNANDA E RODRIGO</span>
@@ -28,14 +29,14 @@
                     
                     <div class="label_opcao">
                         <label >
-                            <input id="botao_opcao" onclick="abreOpcaoConfirmacao()" type="radio" name="opcao" value="opcao1"> Sim
+                            <input id="botao_opcao" onchange="abreInput()" type="radio" name="opcao"> Sim
                           </label>
-                          <br>
+                        <input class ="entrada_texto" type="text" id="meuInput">
                     </div>
                     
                       
                 <div class="container_button">
-                    <button class="button_conf_presenca" type="submit"  onclick="enviarConfirmacao()">Confirmar presença</button>
+                    <button class="button_conf_presenca" type="submit"  name="opcao" onclick="enviarConfirmacao()">Confirmar presença</button>
                 </div>
             </form>
             </div>
@@ -44,7 +45,7 @@
         </div>
     </div>
     
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script >
 		$('.js-tilt').tilt({
 			scale: 1.1
