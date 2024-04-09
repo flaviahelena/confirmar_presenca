@@ -18,10 +18,11 @@
 .container_fundo {
     width: 100vw;
     height: 100vh;
-    /*background-image: url(../images/fundo2.svg);*/
+    background-image: url(../images/fundo2.svg);
     background-size: 100%; /* Redimensiona a imagem para cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem no fundo */
     background-repeat: no-repeat;
+    /*background: #dfdfdf;*/
 }
 .fundo{
     border-radius: 10px;
@@ -63,10 +64,10 @@
     height: 35px;
     border-radius: 25px;
     background: #B17D28;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: -ms-flexbox;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,14 +89,13 @@ button:hover {
     color: #B17D28;
 }
 .nome_titulo {
-    font-family: Poppins-Bold;
+    /*font-family: Poppins-Bold;*/
     font-size: 24px;
     color: #B17D28;
     line-height: 1.2;
     text-align: center;
-  
-    width: 100%;
-    display: block;
+    max-width: 100%;
+    display: flex;
   }
 
 .txt_conf_presenca {
@@ -137,29 +137,9 @@ button:hover {
 #meuInput{
     display: none;
 }
-/*@media screen and (max-width: 600px) {
-    /* Estilos para telas menores que 600px de largura 
-    p {
-        text-align: center;
-        position: fixed;
-        top: 43%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-        color: #B17D28;
-        width: 325px;
-        height: 50px;
-    }   
-    .qr_code {
-        max-width: 30%;
-        height: auto;
-        position: fixed;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    body {
+@media screen and (max-width: 600px) {
+    /* Estilos para telas menores que 600px de largura */
+    .container_fundo {
         width: 100vw;
         height: 100vh;
         background-image: url(../images/fundo_celular2.svg);
@@ -168,32 +148,5 @@ button:hover {
         background-repeat: no-repeat;
         overflow: hidden;
     }
-    .nomes{
-        text-align: center;
-        position: fixed;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 80%;
-    }
-    button {
-        background-color: #B17D28;
-        color: white;
-        text-transform: uppercase;
-        transition: 0.3s;
-        text-align: center;
-        border-radius: 10px;
-        padding: 10px;
-        border: none;
-        font-size: 10px;
-        cursor: pointer;
-        top: 73%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        height: auto;
-        display: inline-block;
-        margin: 20px auto;
-        position: absolute;
-    }
-}*/
+    
+}
