@@ -149,5 +149,14 @@ button:hover {
         background-repeat: no-repeat;
         overflow: hidden;
     }
+
+    .nome_titulo{
+        font-size: 18px;
+        color: #B17D28;
+        line-height: 1.2;
+        text-align: center;
+        max-width: 100%;
+        display: flex;
+    }
     
 }
