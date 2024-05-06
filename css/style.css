@@ -31,6 +31,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 177px 130px 33px 95px;
+    overflow: hidden;
 }
 .limiter {
     width: 100%;
