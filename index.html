@@ -1,37 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Presença</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentes</title>
+    <style>
+        .nomes{
+            text-align: center;
+            position: fixed;
+            top: 28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+        }
+        p {
+            text-align: center;
+            position: fixed;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: #B17D28;
+        }
 
+        .qr_code {
+            max-width: 10%;
+            height: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./images/fundo2.svg);
+            background-size: 100%; /* Redimensiona a imagem para cobrir todo o fundo */
+            background-position: center; /* Centraliza a imagem no fundo */
+            background-repeat: no-repeat;
+        }
+
+        button {
+            background-color: #B17D28;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: auto;
+            display: inline-block;
+            margin: 20px auto;
+            position: absolute;
+        }
+
+        button:hover {
+            background-color: #545454;
+            transition: 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        .nome_completo{
+            padding-bottom: 10px;
+            color: #B17D28;
+            position: fixed;
+            top: 46%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+        }
+
+        .entrada_texto{
+            font-family: Poppins-Medium;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #666666;
+            display: block;
+            max-width: 100%;
+            background: #e6e6e6;
+            border-radius: 10px;
+            padding: 0 50px 0 10px;
+            border: none;
+            max-width: 10%;
+            height: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media screen and (max-width: 600px) {
+            /* Estilos para telas menores que 600px de largura */
+            p {
+                text-align: center;
+                position: fixed;
+                top: 43%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 14px;
+                color: #B17D28;
+                width: 325px;
+                height: 50px;
+            }   
+            .qr_code {
+                max-width: 30%;
+                height: auto;
+                position: fixed;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                background-image: url(./images/fundo_celular2.svg);
+                background-size: 100%; /* Redimensiona a imagem para cobrir todo o fundo */
+                background-position: center; /* Centraliza a imagem no fundo */
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+            .nomes{
+                text-align: center;
+                position: fixed;
+                top: 38%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 80%;
+            }
+            button {
+                background-color: #B17D28;
+                color: white;
+                text-transform: uppercase;
+                transition: 0.3s;
+                text-align: center;
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                font-size: 10px;
+                cursor: pointer;
+                top: 73%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 250px;
+                height: auto;
+                display: inline-block;
+                margin: 20px auto;
+                position: absolute;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="limiter">
-        <div class="container_fundo">
-            <div class="fundo">
-                    <form class="presenca_form">
-                    <div class="nomes">
-                        <img src="./images/nomes2.png">
-                        <!--<span class="nome_titulo">FERNANDA E RODRIGO</span>-->
-                    </div>
-                    <div>
-                        <span class="nome_completo">Nome completo</span>
-                        <input class ="entrada_texto" type="text" id="dado1">
-                    </div>
-                    
-                <div class="container_button">
-                    <button class="button_conf_presenca" type="submit"  name="opcao" onclick="enviarConfirmacao()">Confirmar presença</button>
-                </div>
-            </form>
-            </div>
-            
-
+    <div>
+        <img src="./images/nomes2.svg" class="nomes">
+        <div>
+            <span class="nome_completo">Nome completo</span>
+            <input class ="entrada_texto" type="text" id="dado1">
         </div>
+        <button onclick="enviarConfirmacao()">Confirmar presença</button>
     </div>
-    
+        
     <script src="./js/main.js"></script>
     <script >
 		$('.js-tilt').tilt({
