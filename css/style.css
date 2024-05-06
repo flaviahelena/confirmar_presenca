@@ -23,6 +23,7 @@
     background-position: center; /* Centraliza a imagem no fundo */
     background-repeat: no-repeat;
     /*background: #dfdfdf;*/
+    overflow: hidden;
 }
 .fundo{
     border-radius: 10px;
@@ -31,7 +32,6 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 177px 130px 33px 95px;
-    overflow: hidden;
 }
 .limiter {
     width: 100%;
