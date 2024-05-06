@@ -1,5 +1,12 @@
 function enviarConfirmacao(){
 
+    //var telefone= "5531986042241";
+    var telefone= "5531988443535";
+    var nome = document.getElementById("dado1").value;
+    var url = "https://api.whatsapp.com/send?phone="+telefone+"&text=Ol%C3%A1!%20Gostaria%20de%20confirmar%20a%20presen%C3%A7a%20de%20"+nome+"%20para%20o%20casamento%20de%20Fernanda%20e%20Rodrigo!"
+    
+    // Abre a URL em uma nova aba
+    window.open(url);
 }
 
 function abreOpcaoConfirmacao(){
